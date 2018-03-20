@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context="har.team.mapenv.SubmitActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/latitide"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/latitide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentTop="true">
+    </ImageView>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:background="#FFC300"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:text="Upload Image" >
+            </Button>
+            <RadioGroup
+                android:id="@+id/types"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+<RadioButton
+    android:id="@+id/type"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Bin Overflow"/>
+                <RadioButton
+                    android:id="@+id/type1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rotten Smell"/>
+                <RadioButton
+                    android:id="@+id/type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fire/Immediate Action"/>
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFC300"
+                android:layout_height="wrap_content"
+                android:text="Submit" >
+            </Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
